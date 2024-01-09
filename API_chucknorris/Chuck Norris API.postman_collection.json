@@ -59,7 +59,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/jokes/random?categories={{category_dev}}",
+					"raw": "{{base_url}}/jokes/random?categories={{mi_categoria}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -70,7 +70,7 @@
 					"query": [
 						{
 							"key": "categories",
-							"value": "{{category_dev}}"
+							"value": "{{mi_categoria}}"
 						}
 					]
 				}
