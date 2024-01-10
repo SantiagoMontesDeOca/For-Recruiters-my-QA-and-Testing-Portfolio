@@ -59,7 +59,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/jokes/random?categories={{mi_categoria}}",
+					"raw": "{{base_url}}/jokes/random?category={{categoria1}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -69,8 +69,13 @@
 					],
 					"query": [
 						{
-							"key": "categories",
-							"value": "{{mi_categoria}}"
+							"key": "category",
+							"value": "{{categoria1}}"
+						},
+						{
+							"key": "category",
+							"value": "{{categoria2}}",
+							"disabled": true
 						}
 					]
 				}
