@@ -4,7 +4,8 @@
 
 Gradually, I will be uploading exercises of different kinds to showcase my working style.<br>
 Currently, there is:<br>
-- Automation tests with Cypress are her: https://github.com/SantiagoMontesDeOca/cypress-test-clases.git  
+- Automation tests with Cypress are here: https://github.com/SantiagoMontesDeOca/cypress-test-clases.git  
 - Planning project (# __QA and Testing Project - MitWeb)<br>
 - Manual testing exercises (Mercy_Webpage) with their respective reports.<br>
 - Manual testing exercises (TriangleWeb_y_App_Respirar).<br>
+- QA Testing Proyect: the-internet.herokuappWebsite.<br>
