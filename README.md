@@ -9,7 +9,7 @@ Currently, the selection comprises: :<br>
 
 - Testing on API_Rick_and_morty.<br>
 
-- Testing on APIchucknorris.<br>
+- Testing on API_chucknorris.<br>
 
 - Testing Demoblaze_Store Website (Using TestRail).<br>
 
