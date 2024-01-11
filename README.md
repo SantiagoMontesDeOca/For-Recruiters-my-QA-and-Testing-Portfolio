@@ -7,13 +7,19 @@ Currently, the selection comprises: :<br>
 
 - Automation tests with Cypress are here: https://github.com/SantiagoMontesDeOca/cypress-test-clases.git<br>
 
-- Planning project (# __QA and Testing Project - MitWeb)<br>
+- Testing on API_Rick_and_morty.<br>
+
+- Testing on APIchucknorris.<br>
+
+- Testing Demoblaze_Store Website (Using TestRail).<br>
 
 - Manual testing exercises (Mercy_Webpage) with their respective reports.<br>
 
-- Manual testing exercises (TriangleWeb_y_App_Respirar).<br>
+- Plan and testing exercises (TriangleWeb_y_App_Respirar).<br>
 
 - QA Testing Proyect: the-internet.herokuappWebsite.<br>
+
+- Planning project (# __QA and Testing Project - MitWeb)<br>
 
 **Any issues opening a particular file? No worries, everything is also available on this cloud drive.**<br>
 
