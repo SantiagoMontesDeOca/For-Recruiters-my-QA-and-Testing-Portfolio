@@ -7,6 +7,8 @@ Currently, the selection comprises: :<br>
 
 - Automation tests with Cypress are here: https://github.com/SantiagoMontesDeOca/cypress-test-clases.git<br>
 
+- Some UnitTesting: https://github.com/SantiagoMontesDeOca/pruebasUnitarias.git <br>
+
 - Testing on API_Rick_and_morty.<br>
 
 - Testing on API_chucknorris.<br>
