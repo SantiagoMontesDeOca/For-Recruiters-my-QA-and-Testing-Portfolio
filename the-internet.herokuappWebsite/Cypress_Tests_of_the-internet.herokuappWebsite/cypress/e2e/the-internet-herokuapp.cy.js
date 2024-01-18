@@ -22,13 +22,21 @@ describe('the-internet.herokuapp tests', () => {
     cy.get('button.added-manually').should('not.exist');
 
   });
-
   
-    it('Test Case ID: TC_3BasicAuth_001', () => {
-      cy.get('ul > :nth-child(3) > a ').click();
-      
-    });
+  /*it('Test Case ID: TC_3BasicAuth_001', () => {
+      cy.get('ul > :nth-child(3) > a').click()
+     
+  });
+  */
+  
+  it('TC_4BrokenImages_001', ()  => {
+    // Click on Broken images.
+    cy.get('ul > :nth-child(4) > a ').click();
 
+    // Images are present and displayed on the page.
+    cy.get('.example img').should('have.length', 3);
+
+  });
   
   
 
