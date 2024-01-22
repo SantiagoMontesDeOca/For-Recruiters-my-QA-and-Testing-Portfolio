@@ -23,17 +23,7 @@ describe('the-internet.herokuapp tests', () => {
 
   });
   
-  /*it('Test Case ID: TC_3BasicAuth_001', () => {
-      cy.get('ul > :nth-child(3) > a').click()
-     
-  });
-  Acercamientos al codigo: 
-    cy.get('form').submit()
-•   cy.focused()
-
-  */
-  
-  it('TC_4BrokenImages_001', () => {
+ it('TC_4BrokenImages_001', () => {
     // Click on Broken images.
     cy.get('ul > :nth-child(4) > a ').should('contain', 'Broken Images').click();
 
