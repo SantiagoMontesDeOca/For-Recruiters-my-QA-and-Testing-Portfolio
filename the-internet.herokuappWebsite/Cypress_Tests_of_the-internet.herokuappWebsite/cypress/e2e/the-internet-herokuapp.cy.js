@@ -86,9 +86,6 @@ describe('the-internet.herokuapp tests', () => {
       cy.get('[type="checkbox"]').last().uncheck();
       cy.get('[type="checkbox"]').last().should('be.not.checked');
 
-
-
-
     });
     
   
