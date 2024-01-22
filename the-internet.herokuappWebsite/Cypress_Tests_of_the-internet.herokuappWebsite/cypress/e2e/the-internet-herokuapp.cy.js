@@ -55,18 +55,42 @@ describe('the-internet.herokuapp tests', () => {
     // Last botton 
     cy.get('a.button').last().should('exist');
     
-   // Existe una Tabla de 11 filas y 77 celdas
-    cy.get('div.large-10.columns, table')
+    // Existe una Tabla de 11 filas y 77 celdas
+    cy.get('.large-10.columns, table')
       .should('exist')
       .find('tr') // Seleccionar las filas dentro del elemento encontrado
       .should('have.length', 11) // Verificar que hay 11 filas
       .find('td') // Seleccionar las celdas dentro de las filas
-      .should('have.length', 70) // Verificar que hay 77 celdas (11 filas x 7 columnas)
-      .find('a') // Seleccionar los elementos <a> dentro del div o table
+      .should('have.length', 70) // Verificar que hay 70 celdas 
+      .find('a') // Seleccionar los elementos <a> dentro del div
       .should('have.length', 20 ); // Verificar que hay 20 elementos <a>
 
+    });
 
-  });
+    it('TC_6Checkboxes_001', () => {
+      // Click on Checkboxes.
+    cy.get('ul > :nth-child(6) > a ').should('contain', 'Checkboxes').click();
+
+      //Find first checkbox, check it and check to be checked/unchecked.
+      cy.get('[type="checkbox"]').first().check();
+      cy.get('[type="checkbox"]').first().should('be.checked');
+
+      cy.get('[type="checkbox"]').first().uncheck();
+      cy.get('[type="checkbox"]').first().should('be.not.checked');
+
+
+      //Find second checkbox, check it and check to be checked/unchecked.
+      cy.get('[type="checkbox"]').last().check();
+      cy.get('[type="checkbox"]').last().should('be.checked');
+
+      cy.get('[type="checkbox"]').last().uncheck();
+      cy.get('[type="checkbox"]').last().should('be.not.checked');
+
+
+
+
+    });
+    
   
 
 });
