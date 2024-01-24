@@ -113,7 +113,7 @@ describe('the-internet.herokuapp tests', () => {
     }).then((response) => {
       // Verificar el código de estado y otras condiciones según la respuesta
       expect(response.status).to.eq(200);
-      // Agregar más verificaciones según la respuesta esperada
+      
     });  
     
     
