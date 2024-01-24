@@ -4,6 +4,8 @@ describe('the-internet.herokuapp tests', () => {
         
   });
 
+  /*
+
   it('TC_2AddRemoveElements_001', () => {
 
     // Click on ADD/Remove elements.
@@ -68,7 +70,6 @@ describe('the-internet.herokuapp tests', () => {
       cy.get('[type="checkbox"]').first().uncheck();
       cy.get('[type="checkbox"]').first().should('be.not.checked');
 
-
       //Find second checkbox, check it and check to be checked/unchecked.
       cy.get('[type="checkbox"]').last().check();
       cy.get('[type="checkbox"]').last().should('be.checked');
@@ -77,7 +78,47 @@ describe('the-internet.herokuapp tests', () => {
       cy.get('[type="checkbox"]').last().should('be.not.checked');
 
     });
+
+    it('TC_7ContextMenu_001', () => {
+
+      // Click on Context Menu.
+      cy.get('ul > :nth-child(7) > a').should('contain', 'Context Menu').click();
+
+      // Right click on the box .
+      cy.get('#hot-spot').rightclick();
+
+      // Verificar que el mensaje de alerta es 'You selected a context menu'.
+      cy.on('window:alert', (alertText) => {
+        
+        expect(alertText).to.include('You selected a context menu');
+      
+      });
+    })
+*/
     
+    it('TC_8DigestAuthentication_001', () => {
+
+      // Click on Digest Authentication.
+      cy.get('ul > :nth-child(8) > a').click();
+      
+    // Enviar solicitud GET con autenticación
+    cy.request({
+      method: 'GET',
+      url: 'https://the-internet.herokuapp.com/digest_auth',
+      auth: {
+        username: 'admin',
+        password: 'admin'
+      },
+      failOnStatusCode: false
+    }).then((response) => {
+      // Verificar el código de estado y otras condiciones según la respuesta
+      expect(response.status).to.eq(200);
+      // Agregar más verificaciones según la respuesta esperada
+    });  
+    
+    
+    });
+   
   
 
 });
