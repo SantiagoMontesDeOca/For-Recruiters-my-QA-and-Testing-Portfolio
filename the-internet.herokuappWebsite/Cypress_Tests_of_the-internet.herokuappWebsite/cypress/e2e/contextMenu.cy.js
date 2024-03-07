@@ -11,7 +11,7 @@ describe('Context Menu', () => {
 
         // Esperar a que aparezca la alerta y confirmarla
         cy.on('window:alert', (alertText) => {
-        expect(alertText).to.equal('Texto de la alerta'); // Ajusta el texto según tu caso
+        expect(alertText).to.equal('You selected a context menu'); // Ajusta el texto según tu caso
         // Puedes hacer más aserciones o acciones según sea necesario
         });
       
