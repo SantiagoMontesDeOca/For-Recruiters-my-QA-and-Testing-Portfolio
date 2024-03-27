@@ -4,8 +4,7 @@ describe('the-internet.herokuapp tests', () => {
         
   });
 
-  /*
-
+  
   it('TC_2AddRemoveElements_001', () => {
 
     // Click on ADD/Remove elements.
@@ -25,7 +24,7 @@ describe('the-internet.herokuapp tests', () => {
 
   });
   
- it('TC_4BrokenImages_001', () => {
+    it('TC_4BrokenImages_001', () => {
     // Click on Broken images.
     cy.get('ul > :nth-child(4) > a ').should('contain', 'Broken Images').click();
 
@@ -94,31 +93,4 @@ describe('the-internet.herokuapp tests', () => {
       
       });
     })
-*/
-    
-    it('TC_8DigestAuthentication_001', () => {
-
-      // Click on Digest Authentication.
-      cy.get('ul > :nth-child(8) > a').click();
-      
-    // Enviar solicitud GET con autenticación
-    cy.request({
-      method: 'GET',
-      url: 'https://the-internet.herokuapp.com/digest_auth',
-      auth: {
-        username: 'admin',
-        password: 'admin'
-      },
-      failOnStatusCode: false
-    }).then((response) => {
-      // Verificar el código de estado y otras condiciones según la respuesta
-      expect(response.status).to.eq(200);
-      
-    });  
-    
-    
-    });
-   
-  
-
 });
